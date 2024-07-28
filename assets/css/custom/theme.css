@@ -69,7 +69,6 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 1;
   overflow: hidden;
 
   z-index: 1;
@@ -354,30 +353,6 @@ header {
 .doodlestech-button span.position-relative,
 .doodlestech-button a.position-relative {
   z-index: 2;
-}
-.sideImg {
-  border-radius: 10px;
-  width: 100%;
-  height: 400px !important;
-  position: relative;
-  border: solid 3px var(--bg-color);
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 7px 0px 0px rgba(44, 195, 146, 0.004);
-  transform-style: preserve-3d;
-  display: grid;
-  place-content: center;
-  overflow: visible !important;
-}
-.sideImg::before {
-  content: "";
-  background-color: var(--primary-color);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 5px;
-  border-radius: inherit;
-  transform: translateZ(-1px);
-  left: 0;
 }
 .sideImg img {
   overflow: hidden;
@@ -703,7 +678,7 @@ header {
 }
 .video-block {
   border-radius: 20px;
-  background-color: rgb(43, 44, 47);
+  background-color: rgb(255, 255, 255);
   width: 100%;
   height: 485px;
   overflow: hidden;
@@ -713,12 +688,6 @@ header {
   align-items: center;
 
   justify-content: center;
-}
-.video-block img {
-  opacity: 0.46;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 .playBtn {
   width: 140px;
@@ -1023,7 +992,7 @@ header {
 .doodlestech-about {
   width: 100%;
   position: relative;
-  min-height: 500px;
+  height: 1000px;
 }
 .doodlestech-about-bg {
   position: absolute;
@@ -1047,88 +1016,6 @@ header {
   width: 100%;
   opacity: 0.05;
   height: 100%;
-}
-.doodlestech-about .video-block {
-  height: 630px;
-  position: relative;
-}
-.play-btn {
-  position: relative;
-  text-align: center;
-}
-.play-btn i {
-  font-size: 100px;
-  color: var(--heading-color);
-  margin-bottom: 30px;
-  cursor: pointer;
-  position: relative;
-  transform-style: preserve-3d;
-}
-.glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) translateZ(-1px);
-  width: 150%;
-  height: 150%;
-}
-.glow::after,
-.glow::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  transform: scale(0.6);
-  border: solid 5px var(--bg-color-3);
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transform: scale(0.6);
-  opacity: 1;
-  box-shadow: inset 0px 0px 25px 3px rgba(255, 255, 255, 0.75),
-    0px 0px 25px 10px rgba(255, 255, 255, 0.75);
-}
-
-.play-btn .doodlestech-desc,
-.play-btn .doodlestech-h2 {
-  margin: 0 auto;
-  color: var(--heading-color);
-  text-align: center;
-}
-.video-block iframe,
-.sideImg iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
-  z-index: 3;
-}
-.video-block .close,
-.sideImg .close {
-  font-size: 50px;
-  color: var(--heading-color);
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 6;
-}
-
-.video-block .close,
-.sideImg .close {
-  display: none;
-}
-.doodlestech-about .doodlestech-h1 {
-  color: var(--heading-color);
-  margin: 10px 0 20px 0;
-}
-.doodlestech-semi {
-  font-size: 20px;
-  color: var(--primary-color);
-  font-weight: 800;
-  margin-bottom: 0px;
 }
 .clients {
   border-radius: 70px;
